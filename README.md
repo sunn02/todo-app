@@ -53,7 +53,7 @@ Dispatcher.register(todoStore);
 Usamos `miniFramework.createElement` para crear un componente que renderiza una lista de tareas.
 
 ```js
-const TodoList = () => {
+const ItemList = () => {
   const state = todoStore.getState();
   return miniFramework.createElement(
     "ul",
@@ -67,11 +67,11 @@ const TodoList = () => {
 
 ### **4. Agregar Tareas**
 
-Para agregar una tarea, utilizamos el método `dispatch` del `Store` con una acción.
+Para agregar una tarea, utilizamos el método `dispatch` del `Dispatcher` con una acción.
 
 ```js
 const addItem = (item) => {
-  todoStore.dispatch({ type: "ADD_ITEM", payload: item });
+  Dispatcher.dispatch({ type: "ADD_ITEM", payload: item });
 };
 ```
 
