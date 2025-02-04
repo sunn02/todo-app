@@ -1,0 +1,51 @@
+* {
+    font-family: "Funnel Sans", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+
+#root{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: antiquewhite;
+}
+
+h1{
+    text-align: center;
+}
+
+button {
+    background-color: black;
+    border-radius: 30px;
+    border-width: 0;
+    padding: 10px;
+    gap: 10px;
+    color: white;
+}
+
+input {
+    border-radius: 20px ;  
+    padding: 10px;  
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px ;
+}
+
+
+.input-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+}
